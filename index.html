@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Manual CSS -->
+  <link rel="stylesheet" type="text/css" href="halaman_utama.css">
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-none fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <h3 class="mb-0 mt-0">S I M D P 2</h3>
+          <p class="mb-0 mt-0">Sistem Informasi Manajemen <br> Dokumen P2</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+          style="background-color:goldenrod">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a href="<?= base_url('welcome/login') ?>" class="btn btn-outline-warning my-2 my-sm-0 ml-2"
+              type="submit">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="scene">
+    <div class="moon"></div>
+    <!-- <img src="img/forest.png" class="forest"> -->
+    <div class="container-fluid">
+      <h3 class="display-4"><span>DIREKTORAT JENDERAL BEA DAN CUKAI <br></span>
+        KPPBC T<span>IPE </span>M<span>ADYA </span>P<span>ABEAN</span> B TELUKBAYUR</h3>
+      <p class="lead">Dikala orang-orang terlelap diperaduannya nan nyaman... <br>
+        Ada segelintir orang yang menentang bahaya malam... <br>
+        Karena panggilan jiwa... <br>
+        Demi kesejahteraan bangsa...</p>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12">
+        <center>
+          <a href=""><img src="img/intelijen.png" alt="intelijen"></a>
+          <a href=""><img src="img/penindakan.png" alt="penindakan"></a>
+          <a href=""><img src="img/penyidikan.png" alt="penyidikan"></a>
+        </center>
+      </div>
+    </div>
+    <div class="logo_title">
+      <h4 class="text-center">SEKSI PENINDAKAN DAN PENYIDIKAN</h4>
+    </div>
+
+  </div>
+  <footer>
+    &copy; 2020 All Right Reserved
+  </footer>
+  <!-- Optional JavaScript -->
+  <script>
+    function stars() {
+      let count = 500;
+      let scene = document.querySelector('.scene');
+      let i = 0;
+      while (i < count) {
+        let star = document.createElement("i");
+        let x = Math.floor(Math.random() * window.innerWidth);
+        let y = Math.floor(Math.random() * window.innerHeight);
+        let duration = Math.random() * 10;
+        let size = Math.random() * 2;
+
+        star.style.left = x + 'px';
+        star.style.top = y + 'px';
+        star.style.width = 1 + size + 'px';
+        star.style.height = 1 + size + 'px';
+
+        star.style.animationDuration = 5 + duration + 's';
+        star.style.animationDelay = duration + 's';
+
+        scene.appendChild(star);
+        i++;
+
+      }
+    }
+    stars();
+  </script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
