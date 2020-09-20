@@ -92,8 +92,8 @@
 
 .display-4 {
     color: black;
-    padding-top: 20px;
-    padding-bottom: 70px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     -webkit-text-fill-color: darkgoldenrod;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
@@ -107,8 +107,8 @@
 .lead {
     color: aliceblue;
     font-weight: 400;
-    margin: 30px 20px 30px 0px;
-    padding-bottom: 133px;
+    margin: 4vh 2.5vh 4vh 0px;
+    padding-bottom: 14.5vh;
     font-size: 1.3rem;
     text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
     text-align: right;
@@ -121,13 +121,13 @@ img {
     height: 120px;
     vertical-align: middle;
     padding: 10px 40px 10px 40px;
-    margin-top: 140px;
+    margin-top: 12vh;
     margin-bottom: 0;
 }
 
 .logo_title {
     color: white;
-    margin-top: 10px;
+    margin-top: 1vh;
 }
 
 /* footer */
@@ -146,6 +146,15 @@ footer {
     right: 0;
     border-top: 1px solid rgba(120, 130, 140, 0.13);
     background: rgba(0, 0, 0, 0.9);
+    background-attachment: fixed;
+}
+
+/* desktop */
+/* @media (max-width: 1199.98px) {
+    .moon {
+        top: 180px;
+        left: 200px;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -181,4 +190,4 @@ footer {
     .moon {
         display: none;
     }
-}
+} */
